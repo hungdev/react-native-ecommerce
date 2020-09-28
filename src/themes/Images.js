@@ -1,7 +1,10 @@
 // leave off @2x/@3x
 const images = {
   // logo: require('../Images/ir.png'),
-  // clearLogo: require('../Images/top_logo.png'),
+  saleOffHome: require('../images/sale_off.jpg'),
+  womanHome: require('../images/ec1_woman.jpg'),
+  manHome: require('../images/ec2_man.jpg'),
+  kidHome: require('../images/ec3_kid.jpg'),
   // launch: require('../Images/launch-icon.png'),
   // ready: require('../Images/your-app.png'),
   // ignite: require('../Images/ignite_logo.png'),
