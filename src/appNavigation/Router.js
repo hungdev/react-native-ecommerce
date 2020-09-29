@@ -12,6 +12,7 @@ import ProfileScreen from '../screens/ProfileScreen'
 import WishlistScreen from '../screens/WishlistScreen'
 import CartScreen from '../screens/CartScreen'
 import ProductScreen from '../screens/Home/ProductScreen'
+import DetailScreen from '../screens/Home/DetailScreen'
 
 
 const Tab = createBottomTabNavigator();
@@ -24,6 +25,7 @@ function HomeStackScreen() {
       initialRouteName="Home">
       <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="Product" component={ProductScreen} />
+      <HomeStack.Screen name="Detail" component={DetailScreen} />
     </HomeStack.Navigator>
   )
 }
