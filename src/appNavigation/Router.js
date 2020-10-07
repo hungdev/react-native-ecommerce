@@ -29,6 +29,30 @@ function HomeStackScreen() {
     </HomeStack.Navigator>
   )
 }
+function WishlistStackScreen() {
+  return (
+    <HomeStack.Navigator
+      initialRouteName="Wishlist">
+      <HomeStack.Screen name="Wishlist" component={WishlistScreen} />
+    </HomeStack.Navigator>
+  )
+}
+function CartStackScreen() {
+  return (
+    <HomeStack.Navigator
+      initialRouteName="Cart">
+      <HomeStack.Screen name="Cart" component={CartScreen} />
+    </HomeStack.Navigator>
+  )
+}
+function ProfileStackScreen() {
+  return (
+    <HomeStack.Navigator
+      initialRouteName="Profile">
+      <HomeStack.Screen name="Profile" component={ProfileScreen} />
+    </HomeStack.Navigator>
+  )
+}
 
 function MainStackScreen() {
   return (
@@ -57,9 +81,9 @@ function MainStackScreen() {
       }}
     >
       <Tab.Screen name="HomeStack" component={HomeStackScreen} />
-      <Tab.Screen name="Wishlist" component={WishlistScreen} />
-      <Tab.Screen name="Cart" component={CartScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Wishlist" component={WishlistStackScreen} />
+      <Tab.Screen name="Cart" component={CartStackScreen} />
+      <Tab.Screen name="Profile" component={ProfileStackScreen} />
     </Tab.Navigator>
   );
 }
